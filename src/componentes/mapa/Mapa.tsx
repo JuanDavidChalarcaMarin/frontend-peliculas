@@ -1,6 +1,7 @@
-import { MapContainer, Marker, Popup, TileLayer, useMapEvent } from "reactleaflet";
-import type Coordenada from "./coordenada.model";
+import { MapContainer, Marker, Popup, TileLayer, useMapEvent } from "react-leaflet";
+import type Coordenada from "./coordenada.model.ts";
 import { useState } from "react";
+
 export default function Mapa(props: MapaProps) {
     const [coordenadas, setCoordenadas] = useState<Coordenada[] |
         undefined>(props.coordenadas);
@@ -24,7 +25,7 @@ export default function Mapa(props: MapaProps) {
                 {coordenada.mensaje ? <Popup>{coordenada.mensaje}</Popup> :
                     undefined}
             </Marker>)}
-        </MapContainer>
+        </MapContainer>)
 
 }
 interface MapaProps {
