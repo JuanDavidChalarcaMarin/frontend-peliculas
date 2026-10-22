@@ -4,7 +4,7 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { NavLink } from "react-router";
 import Boton from "../../../componentes/Boton";
-import { primeraLetraMayuscula } from "../../../validaciones/validaciones";
+import { primeraLetraMayuscula } from "../../../validaciones/Validaciones";
 
 export default function FormularioGenero(props: FormularioGeneroProps) {
     const {register,

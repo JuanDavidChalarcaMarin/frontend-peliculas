@@ -2,7 +2,7 @@ import { useForm, type SubmitHandler } from "react-hook-form";
 import type CineCreacion from "../modelos/cineCreacion.model";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { primeraLetraMayuscula } from "../../../validaciones/validaciones";
+import { primeraLetraMayuscula } from "../../../validaciones/Validaciones";
 import Boton from "../../../componentes/Boton";
 import { NavLink } from "react-router";
 import Mapa from "../../../componentes/mapa/Mapa";

@@ -10,6 +10,9 @@ import EditarGenero from "./features/generos/componentes/EditarGenero";
 import IndiceGeneros from "./features/generos/componentes/IndiceGeneros";
 import CrearPelicula from "./features/peliculas/componentes/CrearPelicula";
 import EditarPelicula from "./features/peliculas/componentes/EditarPelicula";
+import CrearProductora from "./features/productoras/componentes/CrearProductora";
+import EditarProductora from "./features/productoras/componentes/EditarProductora";
+import IndiceProductoras from "./features/productoras/componentes/IndiceProductoras";
 import LandingPage from "./features/peliculas/componentes/LandingPage";
 import RutaNoEncontrada from "./componentes/RutaNoEncontrada";
 import FiltrarPeliculas from "./features/peliculas/componentes/FiltrarPeliculas";
@@ -28,6 +31,9 @@ export default function AppRoutes() {
             <Route path="/cines" element={<IndiceCines />} />
             <Route path="/cines/crear" element={<CrearCine />} />
             <Route path="/cines/editar/:id" element={<EditarCine />} />
+            <Route path="/productoras" element={<IndiceProductoras />} />
+            <Route path="/productoras/crear" element={<CrearProductora />} />
+            <Route path="/productoras/editar/:id" element={<EditarProductora />} />
             <Route path="/peliculas/crear" element={<CrearPelicula />} />
             <Route path="/peliculas/editar/:id" element={<EditarPelicula />} />
                 <Route path='/peliculas/filtrar' element={<FiltrarPeliculas />} />

@@ -23,3 +23,15 @@ export function fechaNoPuedeSerFutura(){
         }
     }
 }
+export function fechaNoAnteriorA1900(){
+    return {
+        name: 'fecha-no-anterior-1900',
+        message: 'La fecha no puede ser anterior a 1900',
+        test: (valor: string | undefined) => {
+            if (!valor) return true;
+            const fecha = new Date(valor);
+            const inicio = new Date('1900-01-01');
+            return fecha >= inicio;
+        }
+    }
+}

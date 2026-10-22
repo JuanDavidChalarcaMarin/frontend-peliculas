@@ -4,7 +4,7 @@ import Boton from "../../../componentes/Boton";
 import { NavLink } from "react-router";
 import * as yup from "yup";
 import { fechaNoPuedeSerFutura, primeraLetraMayuscula } from
-        "../../../validaciones/validaciones";
+        "../../../validaciones/Validaciones";
 import { yupResolver } from "@hookform/resolvers/yup";
 import SeleccionarImagen from "../../../componentes/SeleccionarImagen";
 export default function FormularioActor(props: FormularioActorProps) {
