@@ -3,3 +3,5 @@ export default interface Coordenada {
     lat: number;
     mensaje?: string;
 }
+
+// confirmacion
